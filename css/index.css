@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #faf7ee;
+}
+
+header {
+    display: flex;
+    padding: 15px 76px 15px 20px;
+    background-color: #234783;
+}
+
+#livro {
+    width: 70px;
+    height: 70px;
+    margin: 48px 65px 1px 0;
+    transform: rotate(-339deg);
+}
+
+#oculos {
+    width: 70px;
+    height: 70px;
+    margin: 0 23px 46px -85px;
+    transform: rotate(-333deg);
+}
+
+#ruler {
+    width: 70px;
+    height: 70px;
+    margin: 59px 10px 0 -65px;
+    transform: rotate(-83deg);
+}
+
+#header-titulo {
+    width: 148px;
+    margin: 13px -50px 12px 10px;
+    font-family: Love Ya Like A Sister;
+    font-size: 38px;
+    color: #fbf6ef;
+}
+
+a {
+    text-decoration: none;
+}
+
+#sobre-nos {
+    margin: 37px 100px 35px 634px;
+    font-family: Love Ya Like A Sister;
+    font-size: 38px;
+    color: #fff;
+}
+
+#contatos {
+    margin: 37px 0 35px 100px;
+    font-family: Love Ya Like A Sister;
+    font-size: 38px;
+    color: #fff;
+}
+
+#sobre-nos:after, #contatos:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+#sobre-nos:hover:after, #contatos:hover:after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px 85px 35px 85px;
+}
+
+main h2 {
+    width: 808px;
+    margin-bottom: 35px; 
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 500;
+    color: #486790;
+}
+
+main p {
+    font-family: Roboto;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 277px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+    border-radius: 4px;
+    border: solid 1px #000;
+    font-size: 20px;
+    background-color: #ece6cf;
+}
+
+input:disabled {
+    background-color: #dedbcd;
+}
+
+#meio {
+    width: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #f2eee0;
+}
+
+#aluno {
+    margin-left: 0px;
+    transition: 0.3s ease;
+}
+
+button {
+    width: 89px;
+    height: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 8px;
+    border: solid 1px #000;
+    background-color: #234783;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #e4e4e4;
+    background-color: #173467;
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0px 0px 5px 7px;
+    }
+    
+    #livro {
+        width: 40px;
+        height: 40px;
+        margin: 30px 0px 0px 0;
+        transform: rotate(-339deg);
+    }
+    
+    #oculos {
+        width: 40px;
+        height: 40px;
+        margin: 7px -12px 0px -13px;
+        transform: rotate(-333deg);
+    }
+    
+    #ruler {
+        width: 40px;
+        height: 40px;
+        margin: 40px 0px 0px -13px;
+        transform: rotate(-83deg);
+    }
+    
+    #header-titulo {
+        width: 0px;
+        margin: 17px 0px 0px 10px;
+        font-size: 20px;
+    }
+
+    #sobre-nos {
+        margin: 30px 0px 0px 185px;
+        font-size: 17px;
+    }
+    
+    #contatos {
+        margin: 30px 0 0px 25px;
+        font-size: 17px;
+    }
+    
+    main {
+        padding: 20px 0px 35px 0px;
+    }
+    
+    main h2 {
+        width: 348px;
+        margin-bottom: 20px; 
+        font-size: 20px;
+    }
+    
+    main p {
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    input {
+        width: 280px;
+        height: 40px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    #meio {
+        width: 380px;
+        padding: 20px 10px;
+    }
+    
+    button {
+        width: 70px;
+        height: 25px;
+        margin-bottom: 0px;
+        font-size: 15px;
+    }
+}

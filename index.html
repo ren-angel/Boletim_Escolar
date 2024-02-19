@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <img src="img/open-book.png" id="livro">
+        <img src="img/eyeglasses.png" id="oculos">
+        <img src="img/ruler.png" id="ruler">
+    
+        <a href="index.html" id="header-titulo">Boletim Escolar</a>
+    
+        <a href="sobre.html" id="sobre-nos">Sobre Nós</a>
+        <a href="contato.html" id="contatos">Contatos</a>
+    </header>
+
+    <main>
+        <div id="topo">
+            <h2 id="input-texto">Digite a quantidade de alunos da turma (máximo 40 alunos):</h2>
+
+            <input type="text" id="input-quantidade" onkeydown="enviarQuantidade(event)">
+        </div>
+        
+        <div id="meio">
+            <h2 id="aluno-texto"></h2>
+
+            <div id="aluno"></div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
